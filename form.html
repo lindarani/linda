@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Stock Maintenance</title>
+<script type="text/javascript">
+function validation()
+{if(document.f1.ItemType.Index == 0)
+[
+window.alert("plz Enter Item Type")
+return.false;
+}else if(document.f1.ItemCode.value == "")
+[
+window.alert("plz Enter Item Code")
+return.false;
+}else if(document.f1.ItemName.value == "")
+[
+window.alert("plz Enter ItemName")
+return.false;
+}else if(document.f1.NetWeight.value == "")
+[
+window.alert("plz Enter Net Weight")
+return.false;
+}else if(document.f1.Date.value == "")
+[
+window.alert("plz Enter The Date")
+return.false;
+}else if(document.f1.Quantity.value == "")
+[
+window.alert("plz Enter Item Quantity")
+return.false;
+}else if(document.f1.Price.value == "")
+[
+window.alert("plz Enter Item Price")
+return.false;
+}else if(document.f1.TotalAmount.value == "")
+[
+window.alert("plz Enter Total Amount")
+return.false;
+}else
+return true;
+}
+</script>
+<style>
+h1.b {  
+  font-family: "Times New Roman", Times, serif;  
+  color:blue;  
+}
+</style>  
+  </head>
+<body align="Center" bgcolor=#BEBEBE>
+<form font-family: "Times New Roman", Times, serif;>
+<h1 class="b">Stock Maintence</h1>
+<fieldset>
+<legend>
+Stock Details
+</legend>
+<table align="Center">
+<tr>
+<th>Item Type</th>
+<td><select name="ItemType">
+<option>---Select Item Type---</option><option>Mouse<option><option>Keyboard</option><option>Monitor</option></td>
+<th>Item Code</th>
+<td><input type="number" name="ItemCode" min="0" max="1000"></td>
+</tr>
+<tr>
+<th>Item Name</th>
+<td><input type="text" name="ItemName" size="20"></td>
+
+<th>Net Weight</th>
+<td><input type="number" name="NetWeight" min="0" max="1000"></td>
+</tr>
+<tr>
+<th>Date</th>
+<td><input type="date" name="Date"></td>
+
+<th>Quantity</th>
+<td><input type="number" name="Quantity" min="0" max="10000"></td>
+</tr>
+<tr>
+<th>Price</th>
+<td><input type="number" name="Price" min="0" max="1000"></td>
+
+<th>Total Amount</th>
+<td><input type="number" name="TotalAmount" min="0" max="100000"</td>
+</tr>
+</table>
+<button>Change Item Type</button>
+<button><<</button>
+<button><</button>
+<button>></button>
+<button>>></button>
+</fieldset>
+<fieldset>
+<Input type="submit" Value="Add New">
+<button>Update</button>
+<button>Delete</button>
+<button>Show All</button>
+<button>Close</button>
+</fieldset>
+</form>
+</body>
+</html>
